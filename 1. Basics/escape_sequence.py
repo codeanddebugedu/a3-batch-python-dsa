@@ -9,7 +9,7 @@ Escape Sequences (always comes in "" , '')
 """
 
 # Py/\thon
-print("Py/\\thon")
+print("Py/\\thon///")
 
 # Py"\"/"\"thon
 print('Py"\\"/"\\"thon')
