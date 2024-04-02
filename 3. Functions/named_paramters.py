@@ -4,6 +4,7 @@ def marks(physics: float, chemistry: float, maths: float, english: float):
 
 
 # marks(59, 87, 81, 99)
+# Named Params, Default params
 marks(english=99, physics=11, maths=34, chemistry=100)
 marks(59, 88, english=11, maths=89)
 marks(59, 88, english=11, maths=89)
