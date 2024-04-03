@@ -22,10 +22,10 @@ num1: int = int(input("Enter the first number: "))
 num2: int = int(input("Enter the second number: "))
 num3: int = int(input("Enter the third number: "))
 
-middle_number: int = findMiddleNumber(num1, num2, num3)
-print(f"The middle number is: {middle_number}")
+x: int = findMiddleNumber(num1, num2, num3)
+print(f"The middle number is: {x}")
 
-if isDivisibleBy3and4(middle_number):
-    print(f"{middle_number} is divisible by both 3 and 4.")
+if isDivisibleBy3and4(x):
+    print(f"{x} is divisible by both 3 and 4.")
 else:
-    print(f"{middle_number} is not divisible by both 3 and 4.")
+    print(f"{x} is not divisible by both 3 and 4.")
