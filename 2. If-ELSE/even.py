@@ -1,6 +1,6 @@
-number: int = int(input("Enter a number = "))
-
-if number % 2 == 0 and number % 3 == 0:
-    print("YEs")
+number: float = float(input("Enter a number = "))
+print(number % 2)
+if number % 2 == 0:
+    print("EVEN")
 else:
-    print("No")
+    print("ODD")
