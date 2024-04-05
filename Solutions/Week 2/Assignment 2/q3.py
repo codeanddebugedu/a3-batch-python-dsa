@@ -10,8 +10,7 @@ def findMiddleNumber(num1: int, num2: int, num3: int) -> int:
         return num2
     elif (num2 <= num1 <= num3) or (num3 <= num1 <= num2):
         return num1
-    else:
-        return num3
+    return num3
 
 
 def isDivisibleBy3and4(number: int) -> bool:
