@@ -1,0 +1,2 @@
+
+my_list.pop()
