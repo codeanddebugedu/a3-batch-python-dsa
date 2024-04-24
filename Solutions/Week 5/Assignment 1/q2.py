@@ -1,23 +1,23 @@
-# Method 1
-def merge_dictionaries(d1, d2):
-    merged = d1.copy()  # Copy the first dictionary
-    merged.update(d2)  # Update with the second dictionary (overwrites if key exists)
-    return merged
+"""
+Make a dictionary with keys as subject name (physics, chemistry, etc.)
+and values as their marks. Print the name of the subject with highest marks scored.
+"""
 
+from typing import Dict
 
-# Method 2
-def merge_dictionaries2(d1, d2):
-    merged = d1.copy()  # Start with a copy of the first dictionary
-    for key, value in d2.items():
-        merged[key] = (
-            value  # Set the value from the second dictionary, overwriting if key exists
-        )
-    return merged
+subject_marks: Dict[str, int] = {
+    "physics": 67,
+    "chemistry": 12,
+    "english": 95,
+    "computer": 99,
+    "hindi": 54,
+}
 
+highest = 0
+highest_subject = ""
+for subject, mark in subject_marks.items():
+    if mark > highest:
+        highest = mark
+        highest_subject = subject
 
-print(
-    merge_dictionaries2(
-        {"apple": 3, "banana": 5, "cherry": 7},
-        {"banana": 8, "orange": 10, "apple": 9},
-    )
-)
+print(f"Highest marks scored is {highest} in {highest_subject} subject")

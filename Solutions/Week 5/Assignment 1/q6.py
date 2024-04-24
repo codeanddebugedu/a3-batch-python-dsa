@@ -1,25 +1,33 @@
-def max_char_frequency(s):
-    freq = {}
+"""
+Write a Python program to check if a dictionary is empty or not.
+"""
 
-    # Count each character's frequency
-    for char in s:
-        if char in freq:
-            freq[char] += 1
-        else:
-            freq[char] = 1
-
-    # Initialize variables to track the maximum frequency character
-    max_char = None
-    max_freq = 0
-
-    # Iterate through the frequency dictionary to find the character with the highest frequency
-    for char, count in freq.items():
-        if count > max_freq:
-            max_freq = count
-            max_char = char
-
-    # Display the character with the highest frequency
-    print(f"The character with the maximum frequency is '{max_char}'")
+from typing import Dict
 
 
-max_char_frequency("heeellllllloo")
+def isEmpty(dictionary: Dict) -> bool:
+    # Method 1 (Best way)
+    """
+    if not dictionary:
+        return True
+    return False
+    """
+
+    # Method 2
+    """
+    if len(dictionary.keys()) == 0:
+        return True
+    return False
+    """
+
+    # Method 3
+    count = 0
+    for i in dictionary.keys():
+        count += 1
+    if count == 0:
+        return True
+    return False
+
+
+print(isEmpty({}))
+print(isEmpty({"name": "xyz"}))
